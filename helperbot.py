@@ -34,12 +34,6 @@ def webhook_handler():
   
   return 'processing' 
   
-@app.route('/', methods=['POST', 'GET']) 
-def testing():
-  
-  
-  
-  return 0
 
 
 
