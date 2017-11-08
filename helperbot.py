@@ -30,7 +30,7 @@ def webhook_handler():
     if func:
       bot.send_message(chat_id=chat_id, text=func())
     else:
-      bot.send_message(chat_id=chat_id, text='Не понял')
+      bot.send_message(chat_id=chat_id, text='не понял')
   
   return 'processing' 
   
