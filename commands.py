@@ -3,7 +3,7 @@ def display_help():
   return 'ща помогу'
   
 def display_advice():
-  return 'вот мой совет'
+  return 'вот мой совет: гы'
 
 comm_arr = {
 'помоги':   display_help,
