@@ -31,7 +31,6 @@ def webhook_handler():
       bot.send_message(chat_id=chat_id, text=func())
     else:
       bot.send_message(chat_id=chat_id, text='не понял')
-  
   return 'processing' 
   
 
