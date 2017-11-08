@@ -6,6 +6,6 @@ def display_advice():
   return 'Вот мой совет'
 
 comm_arr = {
-'help':   display_help,
-'advice':   display_advice
+'помоги':   display_help,
+'дай совет':   display_advice
 }
