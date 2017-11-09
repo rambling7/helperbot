@@ -23,13 +23,8 @@ def set_webhook():
 def webhook_handler():
   if request.method == "POST": 
     update = telegram.Update.de_json(request.get_json(force=True), bot)
-    cmd = update.message.text
-    
- 
-    
-    
+    cmd = update.message.text   
     chat_id = update.message.chat.id 
-    
     func = commands.comm_arr.get(cmd.split()[0].lower())
     if func:
       bot.send_message(chat_id=chat_id, text=func())
